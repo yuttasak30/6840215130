@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tekken 8</title>
+
+    <style>
+        body{
+            background-color: #d3d3d3;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            color: #FF0033;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        ul{
+            list-style-type: square;
+            text-align: left;
+            display: inline-block;
+        }
+
+        img{
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        a{
+            color: #33CCFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function showWelcome(){
+            alert("ยินดีต้อนรับสู่เว็บไซต์ของฉัน");
+        }
+        function sayHello(){
+            var name = document.getElementById("username").value;
+            document.getElementById("result").innerHTML =
+            "สวัสดี " + name + " ยินดีต้อนรับ";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>แนะนำเกม Tekken 8</h1>
+
+    <img src="https://gmedia.playstation.com/is/image/SIEPDC/tekken-8-keyart-01-en-15may23?$native$" alt="Tekken 8">
+
+    <p>
+        เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำเกม
+    </p>
+
+    <h2>เนื้อหาภายในเกม</h2>
+    <ul>
+        <li>เนื้อเรื่องหลัก</li>
+        <li>โหมดการเล่นกับเพื่อน</li>
+        <li>Combo</li>
+    </ul>
+
+    <p>
+        สามารถซื้อเกมได้ที่หรือดูรีวิว
+        <a href="https://store.steampowered.com/app/1778820/TEKKEN_8/" target="_blank">
+            ลิ้งนี้
+        </a>
+    </p>
+
+    <hr>
+
+    <!-- ฟังก์ชันที่ 1 -->
+    <button onclick="showWelcome()">แสดงข้อความต้อนรับ</button>
+
+    <hr>
+
+    <!-- ฟังก์ชันที่ 2 -->
+    <h3>กรอกชื่อของคุณ</h3>
+    <input type="text" id="username" placeholder="ใส่ชื่อของคุณ">
+    <button onclick="sayHello()">ทักทาย</button>
+
+    <p id="result"></p>
+
+</body>
+</html>
